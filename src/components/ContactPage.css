@@ -211,4 +211,11 @@ textarea.form-control {
     border-color: #f7327a; /* Change border color on hover */
     transform: scale(1.1); /* Adding hover scale effect */
   }
+  a {
+    color: #ffffff; /* Or any desired color */
+    text-decoration: none;
+  }
+  a:hover {
+    color:#ffffff; /* Hover effect color */
+  }
   
