@@ -225,8 +225,8 @@ function Infrastructure() {
             <ul className="list-unstyled">
             <li><a href="/" className="text-white">Home</a></li>
                     <li><a href="/about" className="text-white">About Us</a></li>
-                    <li><a href="/products" className="text-white">Products</a></li>
-                    <li><a href="/careers" className="text-white">Careers</a></li>
+                    <li><a href="/productpage" className="text-white">Products</a></li>
+                    <li><a href="/careerpage" className="text-white">Careers</a></li>
                     <li><a href="/infrastructure" className="text-white">Infrastructure</a></li> {/* Added Infrastructure link */}
                     <li><a href="/contactus" className="text-white">Contact Us</a></li>
             </ul>

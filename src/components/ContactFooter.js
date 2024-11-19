@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ContactFooter = () => {
     return (
@@ -16,12 +17,12 @@ const ContactFooter = () => {
                 <div>
                     <h3>Quick Links</h3>
                     <ul className="list-unstyled">
-                    <li><a href="/" className="text-white">Home</a></li>
-                    <li><a href="/about" className="text-white">About Us</a></li>
-                    <li><a href="/products" className="text-white">Products</a></li>
-                    <li><a href="/careers" className="text-white">Careers</a></li>
-                    <li><a href="/infrastructure" className="text-white">Infrastructure</a></li> {/* Added Infrastructure link */}
-                    <li><a href="/contactus" className="text-white">Contact Us</a></li>
+                        <li><Link to="/" className="text-white">Home</Link></li>
+                        <li><Link to="/about" className="text-white">About Us</Link></li>
+                        <li><Link to="/products" className="text-white">Products</Link></li>
+                        <li><Link to="/careers" className="text-white">Careers</Link></li>
+                        <li><Link to="/infrastructure" className="text-white">Infrastructure</Link></li> {/* Added Infrastructure link */}
+                        <li><Link to="/contactus" className="text-white">Contact Us</Link></li>
                     </ul>
                 </div>
             </div>
