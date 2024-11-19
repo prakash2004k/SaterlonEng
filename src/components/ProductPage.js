@@ -1,8 +1,10 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-// import './ProductPage.css'; // Add any specific styling for the page
-import './ProductPage.module.css';
+import './ProductPage.module.css'; // Ensure this file contains your styles
+import { Link } from 'react-router-dom'; // Import Link for routing
+import 'font-awesome/css/font-awesome.min.css'; // Import Font Awesome for icons
+
 const ProductPage = () => {
   const products = [
     {
@@ -79,21 +81,21 @@ const ProductPage = () => {
           <div>
             <h3>Follow Us</h3>
             <div className="social-links">
-            <a href="tel:+9177086666409" className="icon fas fa-phone-alt" aria-label="Phone"></a>
-            <a href="mailto:saterlonengineering@gmail.com" className="icon fas fa-envelope" aria-label="Email"></a>
-            <a href="https://www.linkedin.com/in/prakash-k-a313ab290/" className="icon fab fa-linkedin" aria-label="LinkedIn"></a>
-            <a href="https://www.yourwebsite.com" className="icon fas fa-globe" aria-label="Website"></a>
-          </div>
+              <a href="tel:+9177086666409" className="icon fas fa-phone-alt" aria-label="Phone"></a>
+              <a href="mailto:saterlonengineering@gmail.com" className="icon fas fa-envelope" aria-label="Email"></a>
+              <a href="https://www.linkedin.com/in/prakash-k-a313ab290/" className="icon fab fa-linkedin" aria-label="LinkedIn"></a>
+              <a href="https://www.yourwebsite.com" className="icon fas fa-globe" aria-label="Website"></a>
+            </div>
           </div>
           <div>
             <h3>Quick Links</h3>
             <ul className="list-unstyled">
-            <li><a href="/" className="text-white">Home</a></li>
-                    <li><a href="/about" className="text-white">About Us</a></li>
-                    <li><a href="/products" className="text-white">Products</a></li>
-                    <li><a href="/careers" className="text-white">Careers</a></li>
-                    <li><a href="/infrastructure" className="text-white">Infrastructure</a></li> {/* Added Infrastructure link */}
-                    <li><a href="/contactus" className="text-white">Contact Us</a></li>
+              <li><Link to="/" className="text-white">Home</Link></li>
+              <li><Link to="/about" className="text-white">About Us</Link></li>
+              <li><Link to="/products" className="text-white">Products</Link></li>
+              <li><Link to="/careers" className="text-white">Careers</Link></li>
+              <li><Link to="/infrastructure" className="text-white">Infrastructure</Link></li>
+              <li><Link to="/contactus" className="text-white">Contact Us</Link></li>
             </ul>
           </div>
         </div>
