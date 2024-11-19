@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Add this import
 import './CareerPage.css';
 
 const CareerPage = () => {
@@ -77,36 +78,6 @@ const CareerPage = () => {
           </div>
         </div>
       </div>
-
-      {/* Footer Section */}
-      <div className="contact-footer">
-        <div className="container d-flex justify-content-between">
-          <div>
-            <h3>Follow Us</h3>
-            <div className="social-links">
-            <a href="tel:+9177086666409" className="icon fas fa-phone-alt" aria-label="Phone"></a>
-            <a href="mailto:saterlonengineering@gmail.com" className="icon fas fa-envelope" aria-label="Email"></a>
-            <a href="https://www.linkedin.com/in/prakash-k-a313ab290/" className="icon fab fa-linkedin" aria-label="LinkedIn"></a>
-            <a href="https://www.yourwebsite.com" className="icon fas fa-globe" aria-label="Website"></a>
-          </div>
-          </div>
-          <div>
-            <h3>Quick Links</h3>
-            <ul className="list-unstyled">
-            <li><a href="/" className="text-white">Home</a></li>
-                    <li><a href="/about" className="text-white">About Us</a></li>
-                    <li><a href="/products" className="text-white">Products</a></li>
-                    <li><a href="/careers" className="text-white">Careers</a></li>
-                    <li><a href="/infrastructure" className="text-white">Infrastructure</a></li> {/* Added Infrastructure link */}
-                    <li><a href="/contactus" className="text-white">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <footer className="text-white text-center py-4" style={{ backgroundColor: 'black' }}>
-        <p className="mb-0">&copy; 2024 Saterlon Engineering. All Rights Reserved.</p>
-      </footer>
     </main>
   );
 };

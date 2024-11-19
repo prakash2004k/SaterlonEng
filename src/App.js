@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import ContactFooter from "./components/ContactFooter"; // Footer specific to ContactPage
-import Footer from "./components/Footer";
+import Footer from "./components/Footer"; // General Footer
 import About from "./components/About";
 import CompanyValues from "./components/CompanyValues";
 import FounderSection from "./components/FounderSection";
@@ -21,38 +21,60 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./components/ContactPage.css"; // ContactPage CSS
 
-const HomePage = () => (
+// Layout component to maintain common structure
+const Layout = ({ children }) => (
   <div>
-    <Carousel />
-    <WelcomeSection /> {/* New Section */}
-    <ChooseUsSection /> {/* New Section */}
-    <CustomCarousel /> {/* New Custom Carousel Section */}
-    <QualitySection /> {/* New Section */}
-    <Footer /> {/* Footer is here for HomePage */}
+    <Navbar />
+    <main>{children}</main>
+    <Footer />
   </div>
 );
 
+// Pages
+const HomePage = () => (
+  <Layout>
+    <Carousel />
+    <WelcomeSection />
+    <ChooseUsSection />
+    <CustomCarousel />
+    <QualitySection />
+  </Layout>
+);
+
 const AboutPage = () => (
-  <div>
+  <Layout>
     <HeaderSection />
     <About />
     <CompanyValues />
     <FounderSection />
     <QualitySection />
-    <Footer /> {/* Footer is here for AboutPage */}
+  </Layout>
+);
+
+const CareerPageLayout = () => (
+  <Layout>
+    <CareerPage />
+  </Layout>
+);
+
+const ContactPageLayout = () => (
+  <div>
+    <Navbar />
+    <ContactPage />
+    <ContactFooter /> {/* Use ContactFooter for this specific page */}
   </div>
 );
 
+// Main App component
 const App = () => (
   <Router>
-    <Navbar />
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<AboutPage />} />
-      <Route path="/products" element={<ProductPage />} />
-      <Route path="/careers" element={<CareerPage />} /> {/* Career Page Route */}
-      <Route path="/contactus" element={<ContactPage />} /> {/* Contact Page Route */}
-      <Route path="/infrastructure" element={<Infrastructure />} /> {/* New Infrastructure Route */}
+      <Route path="/products" element={<Layout><ProductPage /></Layout>} />
+      <Route path="/careers" element={<CareerPageLayout />} /> {/* Career Page Route */}
+      <Route path="/contactus" element={<ContactPageLayout />} /> {/* Contact Page Route */}
+      <Route path="/infrastructure" element={<Layout><Infrastructure /></Layout>} /> {/* New Infrastructure Route */}
     </Routes>
   </Router>
 );

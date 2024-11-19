@@ -68,34 +68,6 @@ const ContactPage = () => {
         ></iframe>
       </div>
 
-      {/* Footer Section */}
-      <footer className="full-width-footer text-white">
-        <div className="container py-5 d-flex justify-content-between">
-          <div>
-            <h3>Follow Us</h3>
-            <div className="social-links">
-              <a href="tel:+91770866409" aria-label="Phone"><i className="fas fa-phone-alt"></i></a>
-              <a href="mailto:saterlonengineering@gmail.com" aria-label="Email"><i className="fas fa-envelope"></i></a>
-              <a href="https://www.linkedin.com/in/yourprofile" aria-label="LinkedIn"><i className="fab fa-linkedin"></i></a>
-              <a href="https://www.yourwebsite.com" aria-label="Website"><i className="fas fa-globe"></i></a>
-            </div>
-          </div>
-          <div>
-            <h3>Quick Links</h3>
-            <ul className="list-unstyled">
-            <li><a href="/" className="text-white">Home</a></li>
-                    <li><a href="/about" className="text-white">About Us</a></li>
-                    <li><a href="/products" className="text-white">Products</a></li>
-                    <li><a href="/careers" className="text-white">Careers</a></li>
-                    <li><a href="/infrastructure" className="text-white">Infrastructure</a></li> {/* Added Infrastructure link */}
-                    <li><a href="/contactus" className="text-white">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-        <div className="footer-bottom text-center py-3">
-          <p className="mb-0">&copy; 2024 Saterlon Engineering. All Rights Reserved.</p>
-        </div>
-      </footer>
     </div>
   );
 };

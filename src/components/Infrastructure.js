@@ -208,35 +208,6 @@ function Infrastructure() {
           </div>
         </div>
       </section>
-
-      {/* Combined Footer Section */}
-      <footer className="full-width-footer text-white">
-        <div className="container py-5 d-flex justify-content-between">
-          <div>
-            <h3>Follow Us</h3>
-            <div className="social-links">
-              <a href="tel:+9177086666409" className="icon fas fa-phone-alt" aria-label="Phone"></a>
-              <a href="mailto:saterlonengineering@gmail.com" className="icon fas fa-envelope" aria-label="Email"></a>
-              <a href="https://www.linkedin.com/in/prakash-k-a313ab290/" className="icon fab fa-linkedin" aria-label="LinkedIn"></a>
-              <a href="https://www.yourwebsite.com" className="icon fas fa-globe" aria-label="Website"></a>
-            </div>
-          </div>
-          <div>
-            <h3>Quick Links</h3>
-            <ul className="list-unstyled">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About Us</Link></li>
-              <li><Link to="/products">Products</Link></li>
-              <li><Link to="/careers">Careers</Link></li>
-              <li><Link to="/infrastructure">Infrastructure</Link></li>
-              <li><Link to="/contactus">Contact Us</Link></li>
-            </ul>
-          </div>
-        </div>
-        <div className="footer-bottom text-center py-3">
-          <p className="mb-0">&copy; 2024 Saterlon Engineering. All Rights Reserved.</p>
-        </div>
-      </footer>
     </div>
   );
 }
