@@ -21,8 +21,8 @@ const Footer = () => {
           <ul className="list-unstyled">
             <li><Link to="/" className="text-white">Home</Link></li>
             <li><Link to="/about" className="text-white">About Us</Link></li>
-            <li><Link to="/products" className="text-white">Products</Link></li>
-            <li><Link to="/careers" className="text-white">Careers</Link></li>
+            <li><Link to="/productpage" className="text-white">Products</Link></li>
+            <li><Link to="/careerpage" className="text-white">Careers</Link></li>
             <li><Link to="/infrastructure" className="text-white">Infrastructure</Link></li> {/* Added Infrastructure link */}
             <li><Link to="/contactus" className="text-white">Contact Us</Link></li>
           </ul>
