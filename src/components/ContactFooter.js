@@ -16,12 +16,12 @@ const ContactFooter = () => {
                 <div>
                     <h3>Quick Links</h3>
                     <ul className="list-unstyled">
-                        <li><a href="index.html" className="text-white">Home</a></li>
-                        <li><a href="about.html" className="text-white">About Us</a></li>
-                        <li><a href="products.html" className="text-white">Products</a></li>
-                        <li><a href="carrers.html" className="text-white">Carrers</a></li>
-                        <li><a href="infrastructure.html" className="text-white">Infrastructure</a></li>
-                        <li><a href="contactus.html" className="text-white">Contact Us</a></li>
+                    <li><a href="/" className="text-white">Home</a></li>
+                    <li><a href="/about" className="text-white">About Us</a></li>
+                    <li><a href="/products" className="text-white">Products</a></li>
+                    <li><a href="/careers" className="text-white">Careers</a></li>
+                    <li><a href="/infrastructure" className="text-white">Infrastructure</a></li> {/* Added Infrastructure link */}
+                    <li><a href="/contactus" className="text-white">Contact Us</a></li>
                     </ul>
                 </div>
             </div>

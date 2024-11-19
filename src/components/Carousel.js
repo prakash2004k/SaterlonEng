@@ -1,34 +1,68 @@
-import React from 'react';
+import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap styles are imported
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Ensure Bootstrap JavaScript is included
 
 const Carousel = () => {
-    return (
-        <div id="imageCarousel" className="carousel slide" data-ride="carousel" data-interval="3000">
-            <ol className="carousel-indicators">
-                <li data-target="#imageCarousel" data-slide-to="0" className="active"></li>
-                <li data-target="#imageCarousel" data-slide-to="1"></li>
-                <li data-target="#imageCarousel" data-slide-to="2"></li>
-            </ol>
-            <div className="carousel-inner">
-                <div className="carousel-item active">
-                    <img src="1.jpg" className="d-block w-100" alt="Image 1" />
-                </div>
-                <div className="carousel-item">
-                    <img src="2.jpg" className="d-block w-100" alt="Image 2" />
-                </div>
-                <div className="carousel-item">
-                    <img src="3.jpg" className="d-block w-100" alt="Image 3" />
-                </div>
-            </div>
-            <a className="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="sr-only">Previous</span>
-            </a>
-            <a className="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="sr-only">Next</span>
-            </a>
-        </div>
-    );
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const images = [
+    { src: 'img.jpeg', alt: 'Image 1' },
+    { src: 'com.png', alt: 'Image 2' },
+    { src: '1.jpg', alt: 'Image 3' }
+  ];
+
+  const handlePrev = () => {
+    setActiveIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+  };
+
+  const handleNext = () => {
+    setActiveIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+  };
+
+  return (
+    <div id="imageCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <ol className="carousel-indicators">
+        {images.map((_, index) => (
+          <li
+            key={index}
+            data-bs-target="#imageCarousel"
+            data-bs-slide-to={index}
+            className={activeIndex === index ? 'active' : ''}
+          ></li>
+        ))}
+      </ol>
+      <div className="carousel-inner">
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`carousel-item ${activeIndex === index ? 'active' : ''}`}
+          >
+            <img src={image.src} className="d-block w-100 carousel-img" alt={image.alt} />
+          </div>
+        ))}
+      </div>
+      <button
+        className="carousel-control-prev"
+        type="button"
+        data-bs-target="#imageCarousel"
+        data-bs-slide="prev"
+        onClick={handlePrev}
+      >
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
+      </button>
+      <button
+        className="carousel-control-next"
+        type="button"
+        data-bs-target="#imageCarousel"
+        data-bs-slide="next"
+        onClick={handleNext}
+      >
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
+      </button>
+    </div>
+  );
 };
 
 export default Carousel;

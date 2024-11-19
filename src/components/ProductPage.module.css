@@ -1,0 +1,140 @@
+/* Navbar Styling */
+.navbar {
+  padding: 1rem 1rem 1rem 0;
+}
+
+.navbar-brand {
+  margin-right: auto;
+}
+
+.navbar-logo {
+  height: 70px;
+  width: auto;
+}
+
+/* Navbar links styling */
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  padding-right: 1rem;
+}
+
+/* Product cards styling */
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Card styling */
+.card {
+  width: 300px;
+  background: #0044cc; /* Blue background */
+  border-radius: 20px;
+  overflow: hidden;
+  color: black; /* Text color white */
+  transition: transform 0.2s;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  position: relative; /* Ensure proper stacking */
+}
+
+.card-body {
+  padding: 15px;
+  overflow: visible; /* Allow content to flow properly */
+}
+
+.card-title {
+  font-size: 1.25em;
+  color: white; /* Heading text is white */
+  z-index: 2; /* Bring the title above the image */
+  position: relative;
+  margin-bottom: 10px;
+}
+
+/* Card text styling */
+.card-text {
+  font-size: 1rem;
+  color: black; /* Ensure description text is white */
+}
+
+/* Enquiry button styling */
+.enquiry-button {
+  margin-top: 10px;
+  background-color: #002a80; /* Darker blue button color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  width: fit-content;
+  margin: 10px auto; /* Center the button */
+  transition: background-color 0.3s;
+}
+
+.enquiry-button:hover {
+  background-color: #001f66; /* Even darker shade on hover */
+}
+
+/* Hover effect on cards */
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .navbar {
+      padding: 0.5rem 0.5rem 0.5rem 0;
+  }
+  .navbar-logo {
+      height: 50px;
+  }
+  .card {
+      width: 100%; /* Adjust card width on small screens */
+  }
+}
+
+/* Footer Styling */
+.contact-footer {
+  padding: 2rem 0;
+  background: #000; /* Black background */
+}
+
+.contact-footer h3 {
+  font-size: 1.3rem;
+  color: white;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links a {
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  color: white; /* Set icon color to white */
+  border: 2px solid #fff; /* White border */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.4rem;
+  transition: all 0.4s ease;
+}
+
+.social-links a:hover {
+  color: #f7327a; /* Change to pink on hover */
+  border-color: #f7327a; /* Change border color on hover */
+  transform: scale(1.1); /* Adding hover scale effect */
+}

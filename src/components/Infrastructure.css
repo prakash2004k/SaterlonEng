@@ -1,0 +1,389 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Add padding to prevent edge clipping */
+}
+
+/* Navbar Styling */
+.navbar {
+    padding: 1rem;
+}
+
+.navbar .navbar-brand img {
+    height: 50px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Company Section */
+.company-section .image-container {
+    width: 100%; /* Adjust to 100% for responsiveness */
+    height: auto;
+    margin-top: 1em;
+    overflow: hidden;
+    position: relative;
+}
+
+.company-section .image-container img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.company-section .image-container img:hover,
+.company-section .image-container img.zoom-active {
+    transform: scale(1.1);
+}
+
+.full-screen-image {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.full-screen-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #4e4a4a; /* Set text color to white for better contrast */
+    background-color: rgba(250, 244, 244, 0.756); /* Semi-transparent black background for readability */
+    padding: 1.5rem;
+    text-align: center;
+    width: 80%;
+    max-width: 1000px;
+    border-radius: 8px;
+}
+
+.content-below {
+    padding-top: 5rem;
+}
+
+.quality-check .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.text-overlay h2 {
+    color: rgb(233, 143, 143);
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+.text-overlay p {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Section Styling */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3em;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.section:nth-child(even) .text {
+    order: 2;
+}
+
+.section {
+    background-color: #ecf5fa;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Full width styling for the first section */
+.company-section {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Mobile/Tablet Adjustments */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+    }
+    .text, .image {
+        width: 100%;
+    }
+    .text-overlay {
+        padding: 1rem;
+        width: 90%; /* Adjust width on smaller screens */
+    }
+    .text-overlay h2 {
+        font-size: 1.6em;
+    }
+    .text-overlay p {
+        font-size: 1rem;
+    }
+    .company-section .image-container img {
+        height: 400px;
+    }
+    footer {
+        padding: 2rem 1rem;
+    }
+}
+
+/* Text Styling */
+.text {
+    width: 45%;
+    text-align: center;
+}
+
+.text h2 {
+    color: rgb(233, 143, 143);
+    margin-bottom: 1em;
+    animation: bounceIn 1.5s ease;
+}
+
+.text p {
+    line-height: 1.6;
+}
+
+/* Image Styling */
+.image {
+    width: 45%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image img {
+    height: 400px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.image:hover img {
+    transform: scale(1.1);
+}
+
+/* Zoom Effect on Touch Devices */
+@media (hover: none) {
+    .image.zoom img:active {
+        transform: scale(1.1);
+    }
+}
+
+/* Fade-In Animation */
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Slide Animations */
+@keyframes bounceIn {
+    0% { transform: scale(0.9); opacity: 0; }
+    60% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+.slide-left {
+    transform: translateX(-50px);
+    animation: slideInLeft 1s forwards;
+}
+
+.slide-right {
+    transform: translateX(50px);
+    animation: slideInRight 1s forwards;
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Quality Check Section */
+.quality-check {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e4f1f4;
+    border-radius: 8px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.quality-check h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #ef7272;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(246, 71, 71, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #dc7272;
+    margin: 15px 20px 5px;
+}
+
+.card p {
+    color: #666;
+    font-size: 1rem;
+    margin: 0 20px 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Hover Effects for Cards */
+#mechanical:hover {
+    animation: mechanicalAnimation 0.5s forwards;
+}
+
+#automation:hover {
+    animation: automationAnimation 0.5s forwards;
+}
+
+#chemical:hover {
+    animation: automationAnimation 0.5s forwards;
+}
+
+#petroleum:hover {
+    animation: petroleumAnimation 0.5s forwards;
+}
+
+#electrical:hover {
+    animation: mechanicalAnimation 0.5s forwards;
+}
+
+@keyframes mechanicalAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes automationAnimation {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes petroleumAnimation {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Footer Section */
+.contact-footer {
+    padding: 2rem 0;
+    background: #000;
+    margin-top: 2rem;
+}
+
+.contact-footer h3 {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4rem;
+    transition: all 0.4s ease;
+}
+
+.social-links a:hover {
+    color: #f7327a;
+    border-color: #f7327a;
+}
+
+/* Additional media queries for very small screens (mobile) */
+@media (max-width: 480px) {
+    .section {
+        padding: 1em;
+    }
+    .text-overlay h2 {
+        font-size: 1.4em;
+    }
+    .card {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+    .quality-check h2 {
+        font-size: 2rem;
+    }
+}

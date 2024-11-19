@@ -1,0 +1,214 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Contact Background Section */
+.contact-bg {
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('contact-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+.contact-bg h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+.contact-bg h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+}
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.line div {
+    margin: 0 0.2rem;
+}
+.line div:nth-child(1),
+.line div:nth-child(3) {
+    height: 3px;
+    width: 60px;
+    background: #f7327a;
+    border-radius: 5px;
+}
+.line div:nth-child(2) {
+    width: 10px;
+    height: 10px;
+    background: #f7327a;
+    border-radius: 50%;
+}
+.company-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+/* Contact Body */
+.contact-body {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+/* Contact Info */
+.contact-info {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+    text-align: center;
+}
+.contact-item {
+    flex: 1 1 calc(45%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.contact-item:hover {
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact-item i {
+    font-size: 2rem;
+    color: #f7327a;
+    margin-bottom: 0.5rem;
+}
+.contact-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+.contact-item p {
+    font-size: 1rem;
+    color: #555;
+}
+.contact-item a {
+    color: #f7327a;
+    text-decoration: none;
+    font-weight: 500;
+}
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form {
+    flex: 1;
+    padding: 2rem;
+    border-top: 1px solid #ddd;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.form-group {
+    display: flex;
+    gap: 1rem;
+}
+.form-control {
+    flex: 1;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1.5px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+.form-control:focus {
+    border-color: #f7327a;
+    outline: none;
+}
+textarea.form-control {
+    resize: none;
+}
+.send-btn {
+    background: #f7327a;
+    color: #fff;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.send-btn:hover {
+    background: #f5246a;
+}
+
+/* Map Section */
+.map iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    margin: 2rem 0;
+    border-radius: 10px;
+}
+
+.contact-footer {
+    padding: 2rem 0;
+    background: #000; /* Black background */
+  }
+  
+  .contact-footer h3 {
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    color: white; /* Set icon color to white */
+    border: 2px solid #fff; /* White border */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4rem;
+    transition: all 0.4s ease;
+  }
+  
+  .social-links a:hover {
+    color: #f7327a; /* Change to pink on hover */
+    border-color: #f7327a; /* Change border color on hover */
+    transform: scale(1.1); /* Adding hover scale effect */
+  }
+  

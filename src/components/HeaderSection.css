@@ -1,0 +1,14 @@
+.header-section {
+    background-color: #333; /* Dark background */
+    padding: 3rem 0;
+  }
+  
+  .header-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .header-section p {
+    font-size: 1.25rem;
+  }
+  
