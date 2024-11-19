@@ -79,11 +79,11 @@ const ProductPage = () => {
           <div>
             <h3>Follow Us</h3>
             <div className="social-links">
-              <a href="tel:+91770866409" className="fas fa-phone-alt" aria-label="Phone"></a>
-              <a href="mailto:saterlonengineering@gmail.com" className="fas fa-envelope" aria-label="Email"></a>
-              <a href="https://www.linkedin.com/in/yourprofile" className="fab fa-linkedin" aria-label="LinkedIn"></a>
-              <a href="https://www.yourwebsite.com" className="fas fa-globe" aria-label="Website"></a>
-            </div>
+            <a href="tel:+917708666409" className="icon fas fa-phone-alt" aria-label="Phone"></a>
+            <a href="mailto:saterlonengineering@gmail.com" className="icon fas fa-envelope" aria-label="Email"></a>
+            <a href="https://www.linkedin.com/in/prakash-k-a313ab290/" className="icon fab fa-linkedin" aria-label="LinkedIn"></a>
+            <a href="https://www.yourwebsite.com" className="icon fas fa-globe" aria-label="Website"></a>
+          </div>
           </div>
           <div>
             <h3>Quick Links</h3>
