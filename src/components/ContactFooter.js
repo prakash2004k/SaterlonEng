@@ -8,9 +8,9 @@ const ContactFooter = () => {
                 <div>
                     <h3>Follow Us</h3>
                     <div className="social-links">
-                        <a href="tel:+91770866409" className="fas fa-phone-alt" aria-label="Phone"></a>
+                        <a href="tel:+9177086666409" className="fas fa-phone-alt" aria-label="Phone"></a>
                         <a href="mailto:saterlonengineering@gmail.com" className="fas fa-envelope" aria-label="Email"></a>
-                        <a href="https://www.linkedin.com/in/yourprofile" className="fab fa-linkedin" aria-label="LinkedIn"></a>
+                        <a href="https://www.linkedin.com/in/prakash-k-a313ab290/" className="fab fa-linkedin" aria-label="LinkedIn"></a>
                         <a href="https://www.yourwebsite.com" className="fas fa-globe" aria-label="Website"></a>
                     </div>
                 </div>
