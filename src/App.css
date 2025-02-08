@@ -1,13 +1,11 @@
-/* Main App container */
 .App {
   text-align: center;
 }
 
-/* App Logo */
 .App-logo {
-  height: 40vmin; /* Use viewport units for responsive scaling */
-  pointer-events: none; /* Disables pointer events on the logo */
-  transition: all 0.3s ease; /* Add a transition for smooth scaling */
+  height: 40vmin; 
+  pointer-events: none; 
+  transition: all 0.3s ease; 
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -16,7 +14,6 @@
   }
 }
 
-/* App Header Section */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,15 +21,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin); /* Scalable font size based on viewport */
+  font-size: calc(10px + 2vmin);
   color: white;
-  padding: 1rem; /* Add padding for small screens */
+  padding: 1rem;
 }
 
 .App-link {
   color: #61dafb;
-  font-size: 1.2rem; /* Make the link slightly larger for better readability */
-  text-decoration: none;
+  font-size: 1.2rem; 
   transition: color 0.3s ease;
 }
 
