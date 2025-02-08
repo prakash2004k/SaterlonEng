@@ -1,27 +1,26 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import ContactFooter from "./components/ContactFooter"; // Footer specific to ContactPage
-import Footer from "./components/Footer"; // General Footer
+import ContactFooter from "./components/ContactFooter"; 
+import Footer from "./components/Footer"; 
 import About from "./components/About";
 import CompanyValues from "./components/CompanyValues";
 import FounderSection from "./components/FounderSection";
 import HeaderSection from "./components/HeaderSection";
 import ProductPage from "./components/ProductPage";
-import CareerPage from "./components/CareerPage"; // CareerPage Component
-import ContactPage from "./components/ContactPage"; // ContactPage Component
-import WelcomeSection from "./components/WelcomeSection"; // New Component
-import ChooseUsSection from "./components/ChooseUsSection"; // New Component
-import Carousel from "./components/Carousel"; // New Component
-import QualitySection from "./components/QualitySection"; // New Component
-import CustomCarousel from "./components/CustomCarousel"; // New Component
-import Infrastructure from "./components/Infrastructure"; // Newly added component
+import CareerPage from "./components/CareerPage"; 
+import ContactPage from "./components/ContactPage"; 
+import WelcomeSection from "./components/WelcomeSection"; 
+import ChooseUsSection from "./components/ChooseUsSection"; 
+import Carousel from "./components/Carousel"; 
+import QualitySection from "./components/QualitySection"; 
+import CustomCarousel from "./components/CustomCarousel"; 
+import Infrastructure from "./components/Infrastructure"; 
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import "./components/ContactPage.css"; // ContactPage CSS
+import "./components/ContactPage.css"; /
 
-// Layout component to maintain common structure
 const Layout = ({ children }) => (
   <div>
     <Navbar />
@@ -30,7 +29,6 @@ const Layout = ({ children }) => (
   </div>
 );
 
-// Pages
 const HomePage = () => (
   <Layout>
     <Carousel />
@@ -65,7 +63,6 @@ const ContactPageLayout = () => (
   </div>
 );
 
-// Main App component
 const App = () => (
   <Router>
     <Routes>
