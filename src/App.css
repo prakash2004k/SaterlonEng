@@ -33,10 +33,9 @@
 }
 
 .App-link:hover {
-  color: #21a1f1; /* Slight color change on hover */
+  color: #21a1f1; 
 }
 
-/* Keyframes for spinning animation */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -46,46 +45,42 @@
   }
 }
 
-/* Responsive Styles */
 
-/* For Small Devices (Mobile) */
 @media (max-width: 576px) {
   .App-logo {
-    height: 30vmin; /* Reduce the size of the logo on smaller screens */
+    height: 30vmin; 
   }
 
   .App-header {
-    font-size: calc(12px + 3vmin); /* Increase font size for readability */
-    padding: 2rem 1rem; /* Add more padding for better spacing */
+    font-size: calc(12px + 3vmin); 
+    padding: 2rem 1rem; 
   }
 
   .App-link {
-    font-size: 1rem; /* Adjust the size of the link for smaller screens */
+    font-size: 1rem; 
   }
 }
 
-/* For Medium Devices (Tablets) */
 @media (max-width: 768px) {
   .App-logo {
-    height: 35vmin; /* Adjust logo size for tablets */
+    height: 35vmin; 
   }
 
   .App-header {
-    font-size: calc(12px + 2.5vmin); /* Slightly larger font size for tablets */
+    font-size: calc(12px + 2.5vmin); 
   }
 
   .App-link {
-    font-size: 1.1rem; /* Slightly larger link for tablets */
+    font-size: 1.1rem; 
   }
 }
 
-/* For Larger Screens (Desktops) */
 @media (min-width: 992px) {
   .App-logo {
-    height: 40vmin; /* Default size for larger screens */
+    height: 40vmin; 
   }
 
   .App-header {
-    font-size: calc(10px + 2vmin); /* Default scalable font size for desktop */
+    font-size: calc(10px + 2vmin); 
   }
 }
