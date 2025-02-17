@@ -4,8 +4,8 @@ body {
   background-color: #f4f4f4;
 }
 .carousel-img {
-  min-height: 500px; /* Set a minimum height */
-  object-fit: cover; /* Ensure the image covers the space without distortion */
+  min-height: 500px; 
+  object-fit: cover; 
 }
 
 @media (min-width: 1024px) {
