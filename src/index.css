@@ -10,7 +10,7 @@ body {
 
 @media (min-width: 1024px) {
   .carousel-img {
-    min-height: 1200px; /* Increase the height for larger screens (desktop) */
+    min-height: 1200px; 
   }
 }
 .container {
@@ -18,7 +18,6 @@ body {
   margin: 0 auto;
 }
 
-/* Navbar Styling */
 .navbar {
   padding: 1rem;
 }
