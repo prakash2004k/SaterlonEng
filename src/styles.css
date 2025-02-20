@@ -8,9 +8,9 @@
   }
   
   .navbar-logo {
-    height: 70px; /* Adjusts logo size */
+    height: 70px; 
     width: auto;
-    margin-left: 0; /* Ensures logo starts from the left corner */
+    margin-left: 0; 
   }
   
   /* Navbar links styling */
