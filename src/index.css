@@ -234,7 +234,6 @@ body {
   }
 }
 
-/* Slide-up animation for paragraph */
 @keyframes slideUpText {
   0% {
     opacity: 0;
@@ -246,7 +245,6 @@ body {
   }
 }
 
-/* Divider growth animation */
 @keyframes growDivider {
   0% {
     width: 0;
