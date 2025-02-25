@@ -1,10 +1,9 @@
 import React from 'react';
-import './ContactPage.css'; // Import the CSS for this page
+import './ContactPage.css';
 
 const ContactPage = () => {
   return (
     <div className="contact-page">
-      {/* Contact Background Section */}
       <div className="contact-bg">
         <h3>Get in Touch with Us</h3>
         <h2>Contact Us</h2>
@@ -15,8 +14,6 @@ const ContactPage = () => {
         </div>
         <p className="company-name">SATERLON ENGINEERING</p>
       </div>
-
-      {/* Contact Information Section */}
       <div className="contact-body">
         <div className="contact-info">
           <div className="contact-item">
