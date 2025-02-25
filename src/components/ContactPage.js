@@ -38,7 +38,6 @@ const ContactPage = () => {
           </div>
         </div>
 
-        {/* Contact Form Section */}
         <div className="contact-form">
           <form action="https://api.web3forms.com/submit" method="POST">
             <div className="form-group">
@@ -56,7 +55,6 @@ const ContactPage = () => {
         </div>
       </div>
 
-      {/* Google Maps Embed */}
       <div className="map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d619.8356179852207!2d77.07646851036216!3d11.102252206392334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f9d76356e117%3A0x8f0fba8e911cd337!2sSaterlon%20Engineering!5e0!3m2!1sen!2sin!4v1730367986333!5m2!1sen!2sin"
