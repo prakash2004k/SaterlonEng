@@ -1,5 +1,5 @@
 import React from 'react';
-import './HeaderSection.css'; // Custom styles
+import './HeaderSection.css';
 
 const HeaderSection = () => (
   <div className="header-section text-white py-5">
