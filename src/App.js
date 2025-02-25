@@ -19,7 +19,7 @@ import Infrastructure from "./components/Infrastructure";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import "./components/ContactPage.css"; /
+import "./components/ContactPage.css";
 
 const Layout = ({ children }) => (
   <div>
