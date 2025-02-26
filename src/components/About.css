@@ -1,14 +1,12 @@
-/* Navbar Styling */
 .navbar {
-  padding: 1rem 1rem 1rem 0; /* Padding removed from left side to place logo at the edge */
+  padding: 1rem 1rem 1rem 0; 
 }
 
 .navbar-brand {
-  margin-right: auto; /* Keeps logo aligned to the far left */
-}
+  margin-right: auto;
 
 .navbar-logo {
-  height: 70px; /* Adjusts logo size */
+  height: 70px; 
   width: auto;
   margin-left: 0; /* Ensures logo starts from the left corner */
 }
