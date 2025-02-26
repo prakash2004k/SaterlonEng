@@ -8,16 +8,14 @@
 .navbar-logo {
   height: 70px; 
   width: auto;
-  margin-left: 0; /* Ensures logo starts from the left corner */
+  margin-left: 0; 
 }
 
-/* Navbar links styling */
 .navbar-nav .nav-link {
   font-size: 1rem;
   padding-right: 1rem;
 }
 
-/* Carousel Image Styling */
 .carousel-inner img {
   width: 100%;
   max-height: 500px; /* Medium size for carousel images */
