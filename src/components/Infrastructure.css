@@ -1,4 +1,4 @@
-/* General Styling */
+
 body {
     font-family: Arial, sans-serif;
     color: #333;
@@ -10,10 +10,9 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px; /* Add padding to prevent edge clipping */
+    padding: 0 20px; 
 }
 
-/* Navbar Styling */
 .navbar {
     padding: 1rem;
 }
