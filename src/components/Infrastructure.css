@@ -26,9 +26,8 @@ body {
     color: #333;
 }
 
-/* Company Section */
 .company-section .image-container {
-    width: 100%; /* Adjust to 100% for responsiveness */
+    width: 100%;
     height: auto;
     margin-top: 1em;
     overflow: hidden;
