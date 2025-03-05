@@ -96,8 +96,6 @@ footer {
     color: #333;
     line-height: 1.6;
 }
-
-/* Section Styling */
 .section {
     display: flex;
     align-items: center;
@@ -118,8 +116,6 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-/* Full width styling for the first section */
 .company-section {
     width: 100%;
     padding: 10px;
