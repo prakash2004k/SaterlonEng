@@ -320,7 +320,6 @@ footer {
     100% { opacity: 1; }
 }
 
-/* Footer Section */
 .contact-footer {
     padding: 2rem 0;
     background: #000;
@@ -357,8 +356,6 @@ footer {
     color: #f7327a;
     border-color: #f7327a;
 }
-
-/* Additional media queries for very small screens (mobile) */
 @media (max-width: 480px) {
     .section {
         padding: 1em;
@@ -374,7 +371,6 @@ footer {
         font-size: 2rem;
     }
 }
-/* Full-Screen Image */
 .full-screen-image {
     position: relative;
     height: 100vh;
