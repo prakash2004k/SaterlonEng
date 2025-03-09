@@ -180,21 +180,16 @@ footer {
     transform: scale(1.1);
 }
 
-/* Zoom Effect on Touch Devices */
 @media (hover: none) {
     .image.zoom img:active {
         transform: scale(1.1);
     }
 }
-
-/* Fade-In Animation */
 .fade-in {
     opacity: 1;
     transform: translateY(0);
     transition: opacity 1s ease, transform 1s ease;
 }
-
-/* Slide Animations */
 @keyframes bounceIn {
     0% { transform: scale(0.9); opacity: 0; }
     60% { transform: scale(1.05); opacity: 1; }
