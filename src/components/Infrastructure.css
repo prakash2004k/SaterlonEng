@@ -393,15 +393,14 @@ footer {
     }
 
     .full-screen-image img {
-        object-position: top center;  /* Focus on the top of the image for mobile */
+        object-position: top center;  
     }
 
     .company-section .image-container img {
-        height: 300px;  /* Adjust image size in the company section for smaller screens */
+        height: 300px;  
     }
 }
 
-/* Mobile-specific adjustments for even smaller screens */
 @media (max-width: 480px) {
     .full-screen-image {
         height: 50vh;  /* Further reduced height on smaller screens */
