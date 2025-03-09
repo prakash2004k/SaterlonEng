@@ -228,7 +228,6 @@ footer {
     }
 }
 
-/* Quality Check Section */
 .quality-check {
     text-align: center;
     padding: 50px 20px;
@@ -283,7 +282,6 @@ footer {
     transform: translateY(-10px);
 }
 
-/* Hover Effects for Cards */
 #mechanical:hover {
     animation: mechanicalAnimation 0.5s forwards;
 }
