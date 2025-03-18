@@ -4,6 +4,7 @@
 
 .navbar-brand {
   margin-right: auto;
+}
 
 .navbar-logo {
   height: 70px; 
@@ -29,14 +30,14 @@
 }
 
 .founder-section h2 {
-  font-size: 2.5rem; /* Larger font size for the section title */
-  margin-bottom: 20px; /* Spacing below the title */
+  font-size: 2.5rem; 
+  margin-bottom: 20px; 
 }
 
 .founder-section h3 {
-  font-size: 1.75rem; /* Font size for the founder's name */
-  margin-bottom: 15px; /* Spacing below the name */
-  color: #007bff; /* Color for emphasis */
+  font-size: 1.75rem; 
+  margin-bottom: 15px; 
+  color: #007bff; 
 }
 
 .founder-section p {
