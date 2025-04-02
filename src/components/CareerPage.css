@@ -73,7 +73,6 @@ body {
   padding: 20px;
 }
 
-/* Gallery Section */
 .gallery-container {
   width: 90%;
   height: 75vh;
@@ -119,7 +118,6 @@ body {
   grid-row: 2/4;
 }
 
-/* Job Section */
 .bg-grey {
   background: #f6f8f8;
 }
@@ -202,7 +200,6 @@ body {
   margin-top: 40px;
 }
 
-/* Footer Section */
 .contact-footer {
   padding: 2rem 0;
   background: #000;
@@ -216,9 +213,7 @@ footer {
   font-size: 16px;
 }
 
-/* Responsive Design */
 
-/* Mobile Portrait */
 @media (max-width: 575.98px) {
   .heading-text {
     font-size: 24px;
