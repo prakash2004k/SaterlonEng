@@ -1,4 +1,3 @@
-/* General Resets */
 html { 
   scroll-behavior: smooth; 
 } 
@@ -9,7 +8,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Header Section */
 .header-section {
   background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 55%, white 55%, white 100%);
 }
@@ -27,7 +25,6 @@ body {
   color: #333;
 }
 
-/* Banner Section */
 .carousel {
   width: 100%;
 }
