@@ -266,7 +266,6 @@ footer {
   }
 }
 
-/* Tablet Portrait */
 @media (max-width: 767.98px) {
   .banner-container {
     background-size: cover;
@@ -312,7 +311,6 @@ footer {
   }
 }
 
-/* Desktop Layout */
 @media (min-width: 1024px) {
   .heading-text {
     font-size: 32px;
