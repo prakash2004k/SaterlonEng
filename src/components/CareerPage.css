@@ -353,7 +353,6 @@ footer {
   }
 }
 
-/* Large Screen */
 @media (min-width: 1200px) {
   .heading-text {
     font-size: 36px;
