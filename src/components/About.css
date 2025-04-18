@@ -82,11 +82,8 @@
   border-color: #f7327a;
 }
 
-/* Responsive Adjustments for Navbar, Founder Section, and Footer */
 
-/* For small devices like mobile (max-width: 576px) */
 @media (max-width: 576px) {
-  /* Navbar */
   .navbar {
       padding: 0.5rem 0.5rem 0.5rem 0;
   }
