@@ -96,10 +96,10 @@
   }
   
   .founder-section {
-      padding: 20px 0; /* Reduce padding for smaller screens */
+      padding: 20px 0; 
   }
   .founder-section h2 {
-      font-size: 2rem; /* Reduce font size */
+      font-size: 2rem; 
   }
   .founder-section h3 {
       font-size: 1.5rem; /* Adjust founder name size */
