@@ -102,13 +102,12 @@
       font-size: 2rem; 
   }
   .founder-section h3 {
-      font-size: 1.5rem; /* Adjust founder name size */
+      font-size: 1.5rem; 
   }
   .founder-section p {
-      font-size: 0.9rem; /* Smaller font for paragraph text */
+      font-size: 0.9rem; 
   }
 
-  /* Footer Section */
   .contact-footer {
       padding: 1.5rem 0; /* Reduce padding */
   }
