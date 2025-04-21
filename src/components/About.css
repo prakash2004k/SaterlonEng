@@ -109,13 +109,12 @@
   }
 
   .contact-footer {
-      padding: 1.5rem 0; /* Reduce padding */
+      padding: 1.5rem 0;
   }
   .contact-footer h3 {
-      font-size: 1.2rem; /* Adjust font size for footer text */
+      font-size: 1.2rem; 
   }
 
-  /* Social Links */
   .social-links a {
       width: 35px;
       height: 35px; /* Reduce size of social icons */
