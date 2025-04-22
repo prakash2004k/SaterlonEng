@@ -117,12 +117,11 @@
 
   .social-links a {
       width: 35px;
-      height: 35px; /* Reduce size of social icons */
+      height: 35px; 
   }
 
-  /* Carousel Image */
   .carousel-inner img {
-      max-height: 300px; /* Smaller carousel images for mobile */
+      max-height: 300px; 
   }
 }
 
