@@ -167,13 +167,12 @@
   }
 }
 
-/* For larger devices (desktop) */
 @media (min-width: 992px) {
   .navbar-logo {
-      height: 70px; /* Logo size for desktop */
+      height: 70px; 
   }
   .navbar-nav .nav-link {
-      font-size: 1.1rem; /* Larger font size for desktop */
+      font-size: 1.1rem; 
       padding-right: 1.5rem;
   }
 
